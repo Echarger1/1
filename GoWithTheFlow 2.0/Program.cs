@@ -14,9 +14,10 @@ namespace GoWithTheFlow_2._0
 
             Console.WriteLine("Lamp doesn't work.");
             Console.WriteLine("Is lamp pluged in?");
-
+           
             string answer = Console.ReadLine();
-
+            
+            while (true)
             if (answer == "yes")
             {
                 Console.WriteLine("Is the bulb burned out?");
@@ -36,11 +37,7 @@ namespace GoWithTheFlow_2._0
                 Console.WriteLine("Plug in lamp.");
             }
 
-            while (!(answer.ToLower() == "yes" && answer.ToLower() == "no"))
-            {
-                Console.WriteLine("Please type yes or no");
-                answer = Console.ReadLine();
-            }
+            
 
 
 
