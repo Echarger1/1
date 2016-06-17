@@ -12,32 +12,38 @@ namespace GoWithTheFlow_2._0
         {
 
 
-            Console.WriteLine("Lamp doesn't work.");
-            Console.WriteLine("Is lamp pluged in?");
-           
-            string answer = Console.ReadLine();
             
+
             while (true)
-            if (answer == "yes")
             {
-                Console.WriteLine("Is the bulb burned out?");
-                answer = Console.ReadLine();
+                Console.WriteLine("Lamp doesn't work.");
+                Console.WriteLine("Is lamp pluged in?");
+
+                string answer = Console.ReadLine();
+
                 if (answer == "yes")
                 {
-                    Console.WriteLine("Replace bulb.");
+                    Console.WriteLine("Is the bulb burned out?");
+                    answer = Console.ReadLine();
+                    if (answer == "yes")
+                    {
+                        Console.WriteLine("Replace bulb.");
+                        
+                    }
+                    else if (answer == "no")
+                    {
+                        Console.WriteLine("Repair Lamp.");
+                        answer = Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Plug in lamp.");
+                        
+                    }
+                  
                 }
-                else
-                {
-                    Console.WriteLine("Repair Lamp.");
-                }
+                
             }
-
-            else
-            {
-                Console.WriteLine("Plug in lamp.");
-            }
-
-            
 
 
 
