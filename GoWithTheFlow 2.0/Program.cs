@@ -10,6 +10,17 @@ namespace GoWithTheFlow_2._0
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Is the baby crying?");
+
+            string answer = Console.ReadLine();
+
+            while (!(answer.ToLower == "yes") || (answer.ToLower == "no"))
+            {
+                Console.WriteLine. ("Type Yes or No");
+                answer = Console.ReadLine();
+            }
+
+            Console.ReadKey();
         }
     }
 }
